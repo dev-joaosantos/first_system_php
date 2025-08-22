@@ -1,0 +1,373 @@
+/* Roboto Font */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* About-me Section Styles */
+.about-me {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contact Information Section Styles */
+.contact-informations {
+    margin-top: 6.5rem;
+}
+
+.contact-organization {
+    display: flex;
+    flex-direction: row;
+    gap: 18rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    justify-content: space-around;
+}
+
+.contact-details {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.contact-picture img {
+    width: 350px;
+    height: auto;
+}
+
+.contact-details p {
+    font-size: 20px;
+}
+
+.contact-details p strong {
+    color: #1d1d78;
+}
+
+.contact-details a {
+    color: #975300;
+    text-decoration: none;
+}
+
+/* Obectives Section */
+.objectives-section {
+    margin-top: 7.5rem;
+    margin-bottom: 2rem;
+}
+
+.objectives-container {
+    margin-top: 6.5rem;
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr;
+    gap: 5rem 6rem;
+    justify-items: center;
+    background-color: rgb(224, 203, 171);
+    padding: 4rem;
+    border-radius: 30px;
+}
+
+.objectives-card {
+    background-color: #eee6dd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 450px;
+    border: 8px solid #171a4a;
+    border-radius: 20px;
+}
+
+.objectives-icon img {
+    width: 200px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.objectives-description p {
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    max-width: 250px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+.objectives-show-more {
+    margin-top: 30px;
+}
+
+.open-button {
+    padding: 10px 20px;
+    background-color: #8d4925;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.open-button:hover {
+    background-color: #b96e48;
+    transition: 0.2s;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+dialog.know-more {
+  border: none;
+  border-radius: 15px;
+  padding: 25px 30px;
+  max-width: 400px;
+  background: #eee6dd; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 0.3s ease;
+}
+
+dialog.know-more::backdrop {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+dialog.know-more h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+dialog.know-more p {
+  text-align: justify;
+  color: #4c4c4c;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: bold;
+  max-width: 350px;
+}
+
+button.close-button {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  padding: 12px 0;
+  background-color: #8c4a15; 
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+button.close-button:hover {
+  background-color: #b96e48;
+  transition: 0.2s;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    scale: 0.95;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1366px) {
+    .contact-organization {
+        justify-content: space-around;
+    }
+
+    .contact-details {
+        margin-left: 5%;
+    }
+
+    .contact-picture {
+        margin-right: 5%;
+    }
+
+    .objectives-container {
+        grid-template-columns: 2fr 2fr;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .about-me {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .contact-organization {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+    .contact-details {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .contact-picture img {
+        width: 200px;
+        height: auto;
+    }
+
+    .objectives-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        padding: 2rem;
+    }
+
+    .objectives-card {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .objectives-icon img {
+        width: 150px;
+        margin-top: 20px;
+    }
+
+    .objectives-description p {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-me {
+        margin-top: 3rem;
+    }
+
+    .contact-informations {
+        margin-top: 3rem;
+    }
+
+    .contact-organization {
+        gap: 1.5rem;
+    }
+
+    .contact-details {
+        margin-bottom: 2rem;
+    }
+
+    .contact-picture img {
+        width: 150px;
+    }
+
+    .contact-details p {
+        font-size: 18px;
+    }
+
+    .objectives-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1.5rem;
+        background-color: ;
+    }
+
+    .objectives-card {
+        max-width: 80%;
+        padding: 1rem;
+    }
+
+    .objectives-icon img {
+        width: 120px;
+    }
+
+    .objectives-description p {
+        font-size: 18px;
+    }
+
+    .open-button {
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+
+    dialog.know-more {
+        max-width: 50%;
+        padding: 15px;
+    }
+
+    dialog.know-more h2 {
+        font-size: 1.2rem;
+    }
+
+    dialog.know-more p {
+        font-size: 0.9rem;
+    }
+
+    button.close-button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-picture img {
+        width: 120px;
+    }
+
+    .contact-details p {
+        font-size: 16px;
+    }
+
+    .objectives-container {
+        padding: 1rem;
+    }
+
+    .objectives-card {
+        max-width: 100%;
+    }
+
+    .objectives-icon img {
+        width: 100px;
+    }
+
+    .objectives-description p {
+        font-size: 18px;
+    }
+
+    .open-button {
+        font-size: 14px;
+    }
+
+    .open-button button {
+        padding: 8px 14px;
+    }
+
+    dialog.know-more h2{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    dialog.know-more p {
+        font-size: 12px;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,189 @@
+/* Skills Section */
+.skilss-section {
+    margin-top: 6.5rem;
+}
+
+.card-container {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    gap: 3.5rem 0.5rem;
+    justify-items: center;
+}
+
+.skilss-card {
+    background-color: #eee6dd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 380px;
+    border: 5px solid #171a4a;
+    border-radius: 20px;
+}
+
+.skilss-card img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.skilss-card h4 {
+    font-size: large;
+    text-align: center;
+    height: 30px;
+}
+
+.skilss-card p {
+    margin-top: 5px;
+    text-align: center;
+    font-size: medium;
+    max-width: 80%;
+    height: 30px;
+}
+
+/* Profissional Experience Section */
+.experiences-section {
+    margin-top: 8rem;
+}
+
+.experiences-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    background-color: #eee6dd;
+    border-radius: 30px;
+    padding-bottom: 6rem;
+    margin-top: 5rem;
+}
+
+.experiences {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1366px) {
+    .card-container {
+        grid-template-columns: 3fr 3fr 3fr;
+        gap: 2rem 1rem;
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .card-container {
+        grid-template-columns: 2fr 2fr 2fr;
+        gap: 2rem 1rem;
+        padding: 0 1rem;
+    }
+
+    .skilss-card {
+        width: 200px;
+        height: 300px;
+    }
+
+    .skilss-card img {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+
+    .skilss-card h4 {
+        font-size: 18px;
+    }
+
+    .skilss-card p {
+        font-size: 14px;
+    }
+
+    .experiences {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .skilss-section {
+        margin-top: 3rem;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+
+    .skilss-card {
+        width: 80%;
+        padding: 1rem;
+    }
+
+    .skilss-card img {
+        width: 100px;
+        height: auto;
+    }
+
+    .skilss-card h4 {
+        font-size: 20px;
+        height: 50px;
+    }
+
+    .skilss-card p {
+        font-size: 15px;
+    }
+
+    .experiences-section {
+        margin-top: 4rem;
+    }
+
+    .experiences {
+        margin-top: 3rem;
+        gap: 40px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        gap: 30px;
+        grid-template-columns: 1fr;
+    }
+
+    .skilss-card {
+        width: 80%;
+        height: 380px;
+        gap: 15px;
+        justify-content: start;
+    }
+
+    .skilss-card img {
+        margin-top: 40px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .skilss-card h4 {
+        font-size: 20px;
+        height: 40px;
+    }
+
+    .skilss-card p {
+        font-size: 18px;
+        max-width: 80%;
+    }
+
+    .experiences-container {
+        gap: 60px;
+    }
+
+    .experiences {
+        gap: 60px;
+    }
+
+}

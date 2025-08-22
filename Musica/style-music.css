@@ -1,0 +1,59 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #BAAD78;
+}
+
+/* Main Container Styles*/
+.main-container {
+  width: 75%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: #0c0c0c;
+  padding: 20px; 
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title Styles */
+.title-container {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.title-container h1 {
+  color: #E75D00;
+}
+
+.title-container h2 {
+  color: #C2C800;
+}
+
+/* Music Styles */
+.music-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.music-container p {
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-align: center;
+}
